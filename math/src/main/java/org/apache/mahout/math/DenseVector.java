@@ -364,7 +364,8 @@ public class DenseVector extends AbstractVector {
         double[] thatValues = ((DenseVector) xv.vector).values;
         int untilOffset = offset + size();
 
-        int i, j;
+        int i;
+        int j;
         double sum = 0.0;
 
         // Provoking SSE
@@ -399,7 +400,8 @@ public class DenseVector extends AbstractVector {
         double[] thatValues = xv.values;
         int untilOffset = offset + size();
 
-        int i, j;
+        int i;
+        int j;
         double sum = 0.0;
 
         // Provoking SSE
@@ -416,8 +418,8 @@ public class DenseVector extends AbstractVector {
         }
 
         // Picking up slack
-        for ( ;
-          i < untilOffset;
+        while (
+          i < untilOffset
           ) {
           sum += thisValues[i++] * thatValues[j++];
         }
