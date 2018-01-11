@@ -54,6 +54,7 @@ public class AewUnary {
       MRTaskAewUnary(Object _fn) {
         fn = (Serializable)_fn;
       }
+      @Override
       public void map(Chunk chks[], NewChunk ncs[]) {
         for (int c = 0; c < chks.length; c++) {
           Chunk chk = chks[c];
