@@ -17,7 +17,6 @@
 
 package org.apache.mahout.math;
 
-import org.apache.mahout.math.flavor.TraversingStructureEnum;
 
 /**
  * Economy packaging for a dense symmetric in-core matrix.
