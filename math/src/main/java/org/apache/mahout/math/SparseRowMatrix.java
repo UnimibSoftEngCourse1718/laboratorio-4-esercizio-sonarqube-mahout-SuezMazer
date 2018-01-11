@@ -18,7 +18,6 @@
 package org.apache.mahout.math;
 
 import org.apache.mahout.math.flavor.MatrixFlavor;
-import org.apache.mahout.math.flavor.TraversingStructureEnum;
 import org.apache.mahout.math.function.DoubleDoubleFunction;
 import org.apache.mahout.math.function.Functions;
 import org.slf4j.Logger;
